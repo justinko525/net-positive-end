@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>企鵝</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
@@ -20,7 +23,7 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-position: center center;
-            height:auto;
+            height: max-content;
         }
 
         .nav {
@@ -55,6 +58,11 @@
         a:visited {
             color: blue
         }
+
+        .modal-dialog {
+                max-width: fit-content;
+            }
+        
     </style>
 </head>
 
@@ -73,59 +81,85 @@
         </header>
 
         <article>
-            <section>
-                <h3>認識企鵝:</h3>
-                <div>
-                    <p style="float:right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend dolor vel faucibus molestie.
-                        Vestibulum elit mi, dictum ac est in, porta ultricies mi. Donec ut leo vitae dui luctus mattis. Integer
-                        scelerisque nisl nibh, non pulvinar purus aliquet eu. Nunc dolor felis, tincidunt ornare lectus eu,
-                        ultrices elementum eros. Nunc scelerisque, leo eu commodo lobortis, turpis ligula vehicula felis,
-                        sit amet commodo enim mauris sed diam. Integer efficitur diam purus, sit amet tempus quam pulvinar
-                        eget. Duis ante dolor, tristique sed enim a, fermentum eleifend tellus. In malesuada sem ullamcorper
-                        ultrices bibendum. Sed at neque in velit bibendum vestibulum id at est. Maecenas at aliquet urna.
-                        Vestibulum at velit dapibus, convallis diam a, accumsan purus. Donec a egestas sem. Praesent tincidunt
-                        nisi sit amet auctor commodo. Vestibulum ut lacinia sapien. Phasellus fringilla libero diam, sed
-                        ornare erat egestas id. Aenean euismod vulputate feugiat. Proin at molestie risus. Pellentesque habitant
-                        morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ac diam eu mauris
-                        tristique consectetur. Donec dictum egestas arcu eget semper. Pellentesque et felis sem. Proin id
-                        felis ut neque finibus aliquam sed et risus. Aliquam accumsan vestibulum nisl ac tristique. Donec
-                        finibus accumsan velit id luctus. Sed non ornare massa. Nullam semper odio arcu, eu placerat augue
-                        tincidunt non. Vivamus a tortor laoreet eros egestas cursus vel nec libero. In posuere vestibulum
-                        placerat. Proin mollis felis eu purus porttitor placerat. Quisque placerat pharetra lectus ut sagittis.
-                        Suspendisse malesuada pharetra vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc ullamcorper maximus mauris. Maecenas in ante arcu. Curabitur tempor dictum risus, ac vehicula
-                        diam. Vestibulum faucibus vel massa a mattis. Cras laoreet, lectus eget malesuada vestibulum, metus
-                        massa consequat orci, ac tempor lectus urna non ipsum. Sed justo libero, iaculis id erat eu, vulputate
-                        imperdiet purus. Mauris ultricies metus a risus finibus, id scelerisque felis ultricies. Aenean blandit
-                        massa nunc, molestie dignissim ante tempor euismod. Sed id erat id justo mattis egestas. Nullam suscipit
-                        condimentum velit, ac vestibulum arcu ultrices non. Etiam in mattis nibh, sit amet iaculis libero.
-                        Curabitur quis purus nibh. Duis vel erat ex. Duis eget volutpat ex. Proin massa urna, commodo cursus
-                        velit sed, ornare vehicula lectus. Cras gravida magna in dolor convallis condimentum. Nulla sit amet
-                        magna vel enim hendrerit volutpat. Phasellus sapien lorem, aliquam quis scelerisque sed, accumsan
-                        quis orci. Nunc in mi metus. Nunc nec ligula quis mi porta bibendum. Donec interdum pulvinar semper.
-                        Quisque fermentum pretium magna, a lacinia augue interdum sodales. Donec justo dolor, ultrices non
-                        gravida fermentum, accumsan a lacus. Duis a magna nec mauris dignissim sagittis a quis augue. Aliquam
-                        rhoncus mauris eu pellentesque hendrerit.
-                    </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kGhknFzrnXg" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float:left"></iframe>
-                    <a href="https://zh.wikipedia.org/wiki/%E4%BC%81%E9%B5%9D" style=background-color:pink target="_blank">企鵝wiki</a>
-                </div>
-            </section>
 
-            <section>
-                <a href="https://www.zoo.gov.taipei/Default.aspx" target="_blank"><img src="pic/TPzoo.png" alt="Taipei zoo"></a>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.0935337545307!2d120.6967171149502!3d22.046017285456266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b9c4a1c1e32f%3A0x3fc2d412a3a7a1c4!2z5ZyL56uL5rW35rSL55Sf54mp5Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1669085057178!5m2!1szh-TW!2stw"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <audio controls autoplay loop>
-                    <source src="audio/mixkit-dance-with-me-3.mp3" type="audio/mpeg" /> 此環境不支援
-                </audio>
-            </section>
+            <h3>認識企鵝:</h3>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend dolor vel faucibus molestie.
+                    Vestibulum elit mi, dictum ac est in, porta ultricies mi. Donec ut leo vitae dui luctus mattis. Integer
+                    scelerisque nisl nibh, non pulvinar purus aliquet eu. Nunc dolor felis, tincidunt ornare lectus eu, ultrices
+                    elementum eros. Nunc scelerisque, leo eu commodo lobortis, turpis ligula vehicula felis, sit amet commodo
+                    enim mauris sed diam. Integer efficitur diam purus, sit amet tempus quam pulvinar eget. Duis ante dolor,
+                    tristique sed enim a, fermentum eleifend tellus. In malesuada sem ullamcorper ultrices bibendum. Sed
+                    at neque in velit bibendum vestibulum id at est. Maecenas at aliquet urna. Vestibulum at velit dapibus,
+                    convallis diam a, accumsan purus. Donec a egestas sem. Praesent tincidunt nisi sit amet auctor commodo.
+                    Vestibulum ut lacinia sapien. Phasellus fringilla libero diam, sed ornare erat egestas id. Aenean euismod
+                    vulputate feugiat. Proin at molestie risus. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Quisque ac diam eu mauris tristique consectetur. Donec dictum egestas
+                    arcu eget semper. Pellentesque et felis sem. Proin id felis ut neque finibus aliquam sed et risus. Aliquam
+                    accumsan vestibulum nisl ac tristique. Donec finibus accumsan velit id luctus. Sed non ornare massa.
+                    Nullam semper odio arcu, eu placerat augue tincidunt non. Vivamus a tortor laoreet eros egestas cursus
+                    vel nec libero. In posuere vestibulum placerat. Proin mollis felis eu purus porttitor placerat. Quisque
+                    placerat pharetra lectus ut sagittis. Suspendisse malesuada pharetra vulputate. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Nunc ullamcorper maximus mauris. Maecenas in ante arcu. Curabitur
+                    tempor dictum risus, ac vehicula diam. Vestibulum faucibus vel massa a mattis. Cras laoreet, lectus eget
+                    malesuada vestibulum, metus massa consequat orci, ac tempor lectus urna non ipsum. Sed justo libero,
+                    iaculis id erat eu, vulputate imperdiet purus. Mauris ultricies metus a risus finibus, id scelerisque
+                    felis ultricies. Aenean blandit massa nunc, molestie dignissim ante tempor euismod. Sed id erat id justo
+                    mattis egestas. Nullam suscipit condimentum velit, ac vestibulum arcu ultrices non. Etiam in mattis nibh,
+                    sit amet iaculis libero. Curabitur quis purus nibh. Duis vel erat ex. Duis eget volutpat ex. Proin massa
+                    urna, commodo cursus velit sed, ornare vehicula lectus. Cras gravida magna in dolor convallis condimentum.
+                    Nulla sit amet magna vel enim hendrerit volutpat. Phasellus sapien lorem, aliquam quis scelerisque sed,
+                    accumsan quis orci. Nunc in mi metus. Nunc nec ligula quis mi porta bibendum. Donec interdum pulvinar
+                    semper. Quisque fermentum pretium magna, a lacinia augue interdum sodales. Donec justo dolor, ultrices
+                    non gravida fermentum, accumsan a lacus. Duis a magna nec mauris dignissim sagittis a quis augue. Aliquam
+                    rhoncus mauris eu pellentesque hendrerit.
+                </p>
 
+            </div>
 
+            <div style="height:315px;">
+                <section>
+
+                    <iframe width="560px" height="315px" src="https://www.youtube.com/embed/kGhknFzrnXg" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        style="float:left"></iframe>
+                    <div style="display: flex;">
+
+                        <a href="https://www.zoo.gov.taipei/Default.aspx" target="_blank"><img src="pic/TPzoo.png" alt="Taipei zoo"></a>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">木柵動物園地址</button>
+
+                        <div class="modal fade" id="mymodal" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">google 地圖</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.0935337545307!2d120.6967171149502!3d22.046017285456266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b9c4a1c1e32f%3A0x3fc2d412a3a7a1c4!2z5ZyL56uL5rW35rSL55Sf54mp5Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1669085057178!5m2!1szh-TW!2stw"
+                                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="position:abs">
+                        <audio controls autoplay loop>
+                            <source src="audio/mixkit-dance-with-me-3.mp3" type="audio/mpeg" /> 此環境不支援
+                        </audio>
+                    </div>
+
+                </section>
+            </div>
         </article>
+
+    </div>
+    <div>
         <footer>
-            <h4>&copy; 2022 - This is the footer of the website.</h4>
+            <h6 style="text-align:center;">&copy; 2022 - This is the footer of the website.
+                </h4>
         </footer>
     </div>
 </body>
